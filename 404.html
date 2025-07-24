@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <script>
+    (function() {
+      var base = 'https://vidhun.pages.dev';
+      var target = base + location.pathname + location.search + location.hash;
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, <a id="manual" href="#">click here</a>.</p>
+
+  <script>
+    (function() {
+      var base = 'https://vidhun.pages.dev';
+      try {
+        document.getElementById("manual").href = base + location.pathname + location.search + location.hash;
+      } catch (e) {
+        document.getElementById("manual").href = base;
+      }
+    })();
+  </script>
+
+  <noscript>
+    <p>
+      JavaScript is disabled in your browser.<br />
+      Please enable JavaScript to redirect automatically,<br />
+      or <a href="https://vidhun.pages.dev">click here</a> to visit the new site.
+    </p>
+  </noscript>
+</body>
+</html>
